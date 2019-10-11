@@ -48,10 +48,10 @@ function SteamCommunity(options) {
 	this.request = this.request.defaults(defaults);
 
 	// English
-	this._setCookie(Request.cookie('Steam_Language=english'));
+	this._setCookie(Request.cookie('Steam_Language=schinese'))
 
 	// UTC
-	this._setCookie(Request.cookie('timezoneOffset=0,0'));
+	this._setCookie(Request.cookie('timezoneOffset=28800,0'))
 }
 
 SteamCommunity.prototype.login = function(details, callback) {
