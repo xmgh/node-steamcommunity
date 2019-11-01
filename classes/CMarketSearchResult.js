@@ -168,13 +168,8 @@ SteamCommunity.prototype.marketSearch2 = function(options, callback, op) {
 				if (body.start + body.pagesize >= body.total_count) {
 					callback(null, results)
 				} else {
-					if (body.start > 0 && body.start % 2300 == 0) {
-						console.log('请求太过频繁，休息2分钟。')
-						await new Promise(resolve => setTimeout(resolve, 3 * 60 * 1000))
-					} else if (op.delayTime) {
-						await new Promise(resolve => setTimeout(resolve, op.delayTime))
-					}
 					qs.start += body.pagesize
+					await op.searchAfter(qs, results)
 					performSearch()
 				}
 			},
