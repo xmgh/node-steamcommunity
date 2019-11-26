@@ -1,25 +1,15 @@
 {
-	"name": "steamcommunity",
-	"version": "3.40.1",
-	"description": "Provides an interface for logging into and interacting with the Steam Community website",
-	"keywords": [
-		"steam",
-		"steam community"
-	],
-	"homepage": "https://github.com/DoctorMcKay/node-steamcommunity",
-	"bugs": {
-		"url": "https://github.com/DoctorMcKay/node-steamcommunity/issues"
-	},
+	"name": "kyb-steamcommunity",
+	"version": "1.0.0",
+	"description": "",
 	"license": "MIT",
-	"author": {
-		"name": "Alex Corn",
-		"email": "mckay@doctormckay.com",
-		"url": "https://www.doctormckay.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/DoctorMcKay/node-steamcommunity.git"
-	},
+	"files": [
+		"classes/",
+		"components/",
+		"resources/",
+		"index.js",
+		"README.md"
+	],
 	"dependencies": {
 		"request": "^2.86.0",
 		"node-bignumber": "^1.2.1",
